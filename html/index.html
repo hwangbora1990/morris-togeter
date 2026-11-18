@@ -4,8 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MORRIS</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <h1>모리스</h1>
+    <header class="header">
+      <h1 class="logo">
+        <a href=""><img src="../images/common/logo.png" alt="" /></a>
+      </h1>
+      <nav class="gnb">
+        <ul class="list">
+          <li><a href="">상품소개</a></li>
+          <li><a href="">회사소개</a></li>
+          <li><a href="">연구개발</a></li>
+          <li><a href="">홍보센터</a></li>
+          <li><a href="">문의하기</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
+    <div class="main-visual">
+      <ul class="swiper-wrapper visual-list">
+        <li class="swiper-slide visual01"><img src="../images/main/visual01.jpg" alt="" /></li>
+        <li class="swiper-slide visual02"><img src="../images/main/visual02.jpg" alt="" /></li>
+        <li class="swiper-slide visual03"><img src="../images/main/visual03.jpg" alt="" /></li>
+        <li class="swiper-slide visual04"><img src="../images/main/visual04.jpg" alt="" /></li>
+      </ul>
+    </div>
+    <aside class="popup">
+      <div class="logo2"><img src="../images/common/logo2.svg" alt="" /></div>
+      <div class="popup-menu">
+        <a href="#">
+          <span>온라인 스토어</span>
+          <strong>바로가기</strong>
+          <i>↗</i>
+        </a>
+
+        <div class="line"></div>
+
+        <a href="#" class="inquiry">
+          <span>대량 구매 문의</span>
+          <i>↗</i>
+        </a>
+      </div>
+    </aside>
   </body>
+  <script>
+    const mainSwiper = new Swiper(".main-visual", {
+      loop: true,
+      // slidesPerView: 1,
+      speed: 1000,
+      // autoplay: { delay: 3000 },
+      effect: "fade",
+      // pagination: {
+      //   el: ".main-visual .swiper-pagination",
+      //   clickable: true,
+      // },
+    });
+  </script>
 </html>
