@@ -60,7 +60,7 @@ body {
 // .gnb .list a {
 //   display: flex;
 // }
-.main-visaual {
+.main-visual {
   overflow: hidden;
   .visual-list {
     img {
@@ -73,23 +73,30 @@ body {
 .popup {
   background-color: black;
   border-radius: 500px;
-  width: 240px;
-  height: 240px;
+  // width: 240px;
+  // height: 240px;
   position: fixed;
   z-index: 20;
   top: 150px;
   right: 30px;
-  padding: 33px 40px;
+  // padding: 33px 40px;
+  // box-sizing: border-box;
+  width: clamp(180px, 18vw, 240px);
+  height: clamp(180px, 18vw, 240px);
+  padding: clamp(20px, 2.5vw, 33px) clamp(20px, 3vw, 40px);
   box-sizing: border-box;
+
   .logo2 {
     @include flex-center;
     img {
       // margin-top: 50px;
-      width: 92px;
+      // width: 92px;
+      width: clamp(70px, 7vw, 92px);
     }
   }
   .popup-menu {
-    width: 140px;
+    // width: 140px;
+    width: clamp(120px, 10.5vw, 140px);
     margin: 20px auto 0;
 
     a {
@@ -102,17 +109,21 @@ body {
 
       span {
         width: 100%;
-        font-size: 23px;
+        // font-size: 23px;
+        font-size: clamp(16px, 1.7vw, 23px);
       }
 
       strong {
-        font-size: 23px;
+        // font-size: 23px;
+        font-size: clamp(17px, 1.7vw, 23px);
         font-weight: 700;
       }
 
       i {
-        width: 22px;
-        height: 22px;
+        // width: 22px;
+        // height: 22px;
+        width: clamp(18px, 1.7vw, 22px);
+        height: clamp(18px, 1.7vw, 22px);
         box-sizing: border-box;
         border: 1px solid #777;
         border-radius: 50%;
@@ -146,7 +157,8 @@ body {
       justify-content: space-between;
       color: #ccc;
       span {
-        font-size: 18px;
+        // font-size: 18px;
+        font-size: clamp(12px, 1.3vw, 18px);
         color: #777;
         width: auto;
         font-weight: 700;

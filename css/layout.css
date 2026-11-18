@@ -41,10 +41,10 @@ body {
   padding: 0 40px;
 }
 
-.main-visaual {
+.main-visual {
   overflow: hidden;
 }
-.main-visaual .visual-list img {
+.main-visual .visual-list img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -54,13 +54,13 @@ body {
 .popup {
   background-color: black;
   border-radius: 500px;
-  width: 240px;
-  height: 240px;
   position: fixed;
   z-index: 20;
   top: 150px;
   right: 30px;
-  padding: 33px 40px;
+  width: clamp(180px, 18vw, 240px);
+  height: clamp(180px, 18vw, 240px);
+  padding: clamp(20px, 2.5vw, 33px) clamp(20px, 3vw, 40px);
   box-sizing: border-box;
 }
 .popup .logo2 {
@@ -69,10 +69,10 @@ body {
   align-items: center;
 }
 .popup .logo2 img {
-  width: 92px;
+  width: clamp(70px, 7vw, 92px);
 }
 .popup .popup-menu {
-  width: 140px;
+  width: clamp(120px, 10.5vw, 140px);
   margin: 20px auto 0;
 }
 .popup .popup-menu a {
@@ -85,15 +85,15 @@ body {
 }
 .popup .popup-menu a span {
   width: 100%;
-  font-size: 23px;
+  font-size: clamp(16px, 1.7vw, 23px);
 }
 .popup .popup-menu a strong {
-  font-size: 23px;
+  font-size: clamp(17px, 1.7vw, 23px);
   font-weight: 700;
 }
 .popup .popup-menu a i {
-  width: 22px;
-  height: 22px;
+  width: clamp(18px, 1.7vw, 22px);
+  height: clamp(18px, 1.7vw, 22px);
   box-sizing: border-box;
   border: 1px solid #777;
   border-radius: 50%;
@@ -117,7 +117,7 @@ body {
   color: #ccc;
 }
 .popup .popup-menu a.inquiry span {
-  font-size: 18px;
+  font-size: clamp(12px, 1.3vw, 18px);
   color: #777;
   width: auto;
   font-weight: 700;
