@@ -120,6 +120,51 @@ body {
     }
   }
 }
+.product {
+  overflow: hidden;
+  padding: 200px 0%;
+  background-color: $light-gray;
+  // display: flex;
+  // justify-content: center;
+  .container {
+    max-width: 1600px;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 100px;
+  }
+  .slider {
+    li {
+      width: 420px;
+      .img-box {
+        overflow: hidden;
+        transition: all 0.25s ease;
+        &:hover {
+          border-radius: 100px 0 100px 0;
+          img {
+            transform: scale(1.2);
+          }
+        }
+        img {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          transition: all 0.25s ease;
+        }
+      }
+    }
+  }
+  .pagination {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    .swiper-pagination-progressbar-fill {
+      background-color: $primary-color;
+    }
+  }
+}
 .popup {
   background-color: black;
   border-radius: 500px;

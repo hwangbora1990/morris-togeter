@@ -125,6 +125,47 @@ body {
   transform: translateY(0);
 }
 
+.product {
+  overflow: hidden;
+  padding: 200px 0%;
+  background-color: #eee;
+}
+.product .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 100px;
+}
+.product .slider li {
+  width: 420px;
+}
+.product .slider li .img-box {
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+.product .slider li .img-box:hover {
+  border-radius: 100px 0 100px 0;
+}
+.product .slider li .img-box:hover img {
+  transform: scale(1.2);
+}
+.product .slider li .img-box img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.25s ease;
+}
+.product .pagination {
+  width: 100%;
+  top: auto;
+  bottom: 0;
+}
+.product .pagination .swiper-pagination-progressbar-fill {
+  background-color: #d71249;
+}
+
 .popup {
   background-color: black;
   border-radius: 500px;

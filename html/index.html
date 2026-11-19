@@ -12,6 +12,11 @@
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/layout.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -21,7 +26,7 @@
     <meta property="og:title" content="MORIS의 이야기가 시작되는 곳" />
     <meta property="og:description" content="MORIS의 다양한 이야기를 만나보세요." />
     <meta property="og:url" content="https://hwangbora1990.github.io/morris-togeter/html/" />
-    <meta property="og:image" content="./images/og/og.png" />
+    <meta property="og:image" content="https://hwangbora1990.github.io/morris-togeter/images/og/og.png" />
   </head>
   <body>
     <header class="header">
@@ -50,6 +55,62 @@
         <div></div>
       </div>
     </div>
+    <section class="product">
+      <div class="container">
+        <div class="title-box">
+          <h2>New Product</h2>
+          <p>
+            새롭게 선보이는 -<br />
+            모리스의 제품 컬렉션
+          </p>
+        </div>
+        <div class="slider">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/product01.jpg" alt="" />
+                </div>
+                <div class="info">Prime 글리터 형광펜 S<span class="material-symbols-outlined"> north_east </span></div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/product02.jpg" alt="" />
+                </div>
+                <div class="info">Prime 형광펜 S 앤티크<span class="material-symbols-outlined"> north_east </span></div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/product03.jpg" alt="" />
+                </div>
+                <div class="info">Prime 형광펜 M 마일드<span class="material-symbols-outlined"> north_east </span></div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/product04.jpg" alt="" />
+                </div>
+                <div class="info">사인펜 S 플러스<span class="material-symbols-outlined"> north_east </span></div>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <div class="img-box">
+                  <img src="../images/main/product05.jpg" alt="" />
+                </div>
+                <div class="info">사인펜 S 12색<span class="material-symbols-outlined"> north_east </span></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="pagination"></div>
+      </div>
+    </section>
     <aside class="popup">
       <div class="logo2"><img src="../images/common/logo2.svg" alt="" /></div>
       <div class="popup-menu">
@@ -127,6 +188,15 @@
         renderBullet: function (index, className) {
           return `<span class="${className}">${customBullets[index]}</span>`;
         },
+      },
+    });
+    const productSlider = new Swiper(".product .slider", {
+      speed: 1000,
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".product .pagination",
+        type: "progressbar",
       },
     });
   </script>
