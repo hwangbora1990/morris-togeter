@@ -362,9 +362,42 @@ body {
   align-items: center;
   font-size: 20px;
 }
+.pen .slider .pagination .swiper-pagination-bullet h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333;
+  transition: all 0.25s ease;
+}
+.pen .slider .pagination .swiper-pagination-bullet span {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  background-color: transparent;
+  transition: all 0.25s ease;
+}
+.pen .slider .pagination .swiper-pagination-bullet-active h3 {
+  color: #fff;
+  font-weight: 700;
+}
+.pen .slider .pagination .swiper-pagination-bullet-active span {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
 .pen .slider .mask {
+  padding-top: 80px;
+  margin-top: -80px;
   flex-grow: 1;
   overflow: hidden;
+}
+.pen .slider .mask .info {
+  margin-top: -80px;
 }
 .pen .slider .mask .info h3 {
   font-size: 70px;
@@ -375,7 +408,7 @@ body {
   margin: 30px 0;
 }
 .pen .slider .mask .info a {
-  font-weight: 600;
+  font-weight: 700;
   width: 200px;
   display: flex;
   justify-content: center;
