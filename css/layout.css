@@ -15,6 +15,11 @@ body {
   font-weight: 500;
 }
 
+.heading03 {
+  font-size: 54px;
+  font-weight: 500;
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -487,119 +492,42 @@ body {
 }
 
 .merit {
-  position: relative;
-  padding: 150px 0;
-  background: url("../images/main/sec6_bg.jpg") center center/100% auto no-repeat;
-  background-color: #928b83;
-  color: #fff;
-  min-height: 66.6666666667vw;
+  background-image: url(../images/main/sec6_bg.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 66.6667vw;
   box-sizing: border-box;
+  padding: 150px 0;
+  color: #fff;
 }
-.merit::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(50, 45, 40, 0.15);
-}
-.merit .container {
-  max-width: 1600px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  padding: 0 48px;
-}
-.merit .top {
-  position: relative;
-  min-height: 287px;
+.merit h3 {
   text-align: center;
+  margin: 50px 0;
+  line-height: 1.25;
 }
-.merit .top .sub-title {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 20px;
-  font-weight: 600;
-}
-.merit .top h2 {
-  font-size: 64px;
-  line-height: 1.3;
-  font-weight: 700;
-}
-.merit .merit-list {
+.merit .list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-.merit .merit-list li {
-  flex: 1;
-  min-height: 235px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.merit .list li {
+  flex: 0 0 25%;
   text-align: center;
-  gap: 30px;
-}
-.merit .merit-list li:last-child {
   border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px 0;
+  font-size: 20px;
 }
-.merit .merit-list li .icon {
-  width: 134px;
-  height: 134px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.35);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.merit .list li:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
 }
-.merit .merit-list li .icon img {
-  width: 45px;
-  height: 45px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.merit .merit-list li p {
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.6;
+.merit .list li span {
+  font-size: 50px;
+  font-weight: 100;
+  padding: 20px;
+  border-radius: 300px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
-  .merit {
-    padding: 70px 0;
-  }
-  .merit .top {
-    min-height: 220px;
-  }
-  .merit .top .sub-title {
-    position: static;
-    display: block;
-    text-align: left;
-    margin-bottom: 30px;
-  }
-  .merit .top h2 {
-    font-size: 36px;
-  }
-  .merit .merit-list {
-    flex-wrap: wrap;
-  }
-  .merit .merit-list li {
-    flex: 0 0 50%;
-    padding: 30px 10px;
-    min-height: 200px;
-  }
-  .merit .merit-list li:nth-child(2) {
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
-  }
-  .merit .merit-list li .icon {
-    width: 100px;
-    height: 100px;
-  }
-  .merit .merit-list li p {
-    font-size: 15px;
-  }
-}
 .press {
   padding: 150px 0;
   background-color: #eee;
@@ -692,4 +620,126 @@ body {
 .press .press-bottom .nav span {
   font-size: 48px;
   cursor: pointer;
+}
+
+.contact {
+  background-image: url("../images/main/contact-main.jpg");
+  background-size: cover;
+  padding: 150px 0;
+  color: #fff;
+}
+.contact h3 {
+  text-align: center;
+  margin: 50px 0;
+  line-height: 1.25;
+}
+.contact .list {
+  display: flex;
+  gap: 20px;
+}
+.contact .list li {
+  flex: 0 1 25%;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+.contact .list li .title {
+  font-size: 24px;
+  margin: 20px 0;
+}
+.contact .list li img {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 300px;
+  border: 1px solid #fff;
+}
+
+.footer {
+  background-color: #252525;
+  padding: 100px 0;
+  color: #fff;
+}
+.footer .upper {
+  display: flex;
+}
+.footer .upper .menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .upper .copyright-box {
+  flex-grow: 1;
+  padding: 0 100px;
+  margin-left: 100px;
+  border-left: 1px solid #fff;
+}
+.footer .upper .copyright-box .copyright {
+  margin-bottom: 50px;
+}
+.footer .upper .copyright-box dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .upper .copyright-box dl div {
+  display: flex;
+}
+.footer .upper .copyright-box dl .address {
+  flex-basis: 100%;
+}
+.footer .upper .copyright-box dl .tel {
+  flex-basis: 100%;
+}
+.footer .upper .copyright-box dl dt {
+  display: flex;
+  align-items: center;
+}
+.footer .upper .copyright-box dl dt:after {
+  content: "";
+  display: inline-flex;
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+.footer .upper .info-box {
+  margin-top: 55px;
+  font-size: 15px;
+}
+.footer .upper .info-box dl {
+  display: flex;
+  flex-direction: column;
+}
+.footer .upper .info-box dl div {
+  display: flex;
+}
+.footer .upper .info-box dt {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.footer .upper .info-box dt:after {
+  content: "";
+  display: inline-flex;
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+.footer .upper .info-box dd {
+  white-space: nowrap;
+}
+.footer .lower {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  align-items: center;
+}
+.footer .lower .company {
+  font-size: 5vw;
+  font-weight: 500;
+}
+.footer .lower .sns {
+  display: flex;
+  gap: 40px;
 }
